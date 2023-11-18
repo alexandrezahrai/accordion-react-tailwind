@@ -14,4 +14,4 @@ This is a fully accessible and responsive accordion component built using React 
 
 ## Links
 
-[Live Demo](https://markdownlivepreview.com/).
+[Live Demo](https://accordion-react-tailwind.vercel.app/)
