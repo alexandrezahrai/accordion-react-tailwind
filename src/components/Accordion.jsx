@@ -3,7 +3,7 @@ import Item from "./Item";
 import { faqArray } from "../Data";
 import { useState } from "react";
 
-const Accordion = () => {
+const Accordion = ({backgroundColor}) => {
   const [ActiveIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -22,6 +22,7 @@ const Accordion = () => {
           question={faq.question}
           answer={faq.answer}
           ariaExpanded={ActiveIndex === i ? true : false}
+          backgroundColor={backgroundColor}
         />
       ))}
     </div>

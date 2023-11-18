@@ -7,6 +7,7 @@ const Item = ({
   isActive,
   onClick,
   ariaExpanded,
+  backgroundColor = "bg-blue-200"
 }) => {
   return (
     <div className="item overflow-hidden">
@@ -15,8 +16,8 @@ const Item = ({
           type="button"
           role="button"
           id={questionID}
-          className={`w-full flex gap-4 items-center justify-between p-5 transition-colors duration-100 ease-in focus:ring-4 focus:ring-gray-200 hover:bg-blue-200 ${
-            isActive ? "bg-blue-200" : ""
+          className={`w-full flex gap-4 items-center justify-between p-5 transition-colors duration-100 ease-in focus:ring-4 focus:ring-gray-200 hover:${backgroundColor ? backgroundColor : "bg-blue-200"} ${
+            isActive ? backgroundColor : ""
           }`}
           onClick={onClick}
           aria-expanded={ariaExpanded}

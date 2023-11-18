@@ -13,7 +13,7 @@ export default function App() {
         </p>
       </div>
 
-      <Accordion />
+      <Accordion backgroundColor="bg-green-200" />
     </section>
   );
 }
