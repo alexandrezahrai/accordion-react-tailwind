@@ -15,6 +15,7 @@ export default function App() {
           </p>
         </div>
 
+        {/* The component */}
         <Accordion backgroundColor="bg-green-200" />
       </section>
 
